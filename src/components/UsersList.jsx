@@ -1,29 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState , useContext} from 'react'
 import User from './User'
+import {UserContext} from './UserContext'
 
 function UsersList() {
-const [users,setUsers] = useState([
-    {
-        name:'ali raza',
-        age:34,
-        city:'sialkot'
-    },
-    {
-        name:'hamza shabbir',
-        age:22,
-        city:'zafarwal'
-    },
-    {
-        name:'ayesha',
-        age:30,
-        city:'lahore'
-    },
-    {
-        name:'fatima',
-        age:20,
-        city:'karachi'
-    }
-])
+
+    const [users,setUsers] = useContext(UserContext);
 
     return (
         <div>
