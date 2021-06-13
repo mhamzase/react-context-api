@@ -1,10 +1,14 @@
 *{
   font-family: calibri, Geneva, Tahoma, sans-serif;
 }
-table tr td{
+table tr td, table tr th{
   border: 1px solid black;
   border-collapse: collapse;
   padding:20px;
+  text-align: center;
+}
+table{
+  width: 60%;
 }
 
 .topnav {
@@ -29,4 +33,15 @@ table tr td{
 .topnav a.active {
   background-color: #04AA6D;
   color: white;
+}
+input{
+  margin: 5px;
+  width:30%;
+  padding:10px
+}
+button{
+  cursor: pointer;
+  width:32%;
+  margin: 5px;
+  padding: 10px;
 }
